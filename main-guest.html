@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quan ly nhan su | Khanh Linh</title>
+  </head>
+
+  <body>
+    <iframe name="t1" src="./t1.html"></iframe>
+    <iframe name="t2" target="t3" src="./t2-guest.html"></iframe>
+    <iframe name="t3" target="_self" src="./t3.html"></iframe>
+    <iframe name="t4" src="./t4.html"></iframe>
+    <iframe name="t5" src="./t5.html"></iframe>
+  </body>
+
+<style>
+  body {
+    background-color: #FFF3F6;
+    height: 100vh;
+    margin: 0;
+  }
+
+  iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  iframe[name="t1"] {
+    border-bottom: 1px solid #F05E7F;
+    height: 15%;
+    width: 100%;
+  }
+
+  iframe[name="t2"],
+  iframe[name="t4"] {
+    height: 70%;
+    width: 19%;
+  }
+
+  iframe[name="t3"] {
+    border-left: 1px solid #F05E7F;
+    border-right: 1px solid #F05E7F;
+    height: 70%;
+    width: 60%;
+  }
+
+  iframe[name="t5"] {
+    border-top: 1px solid #F05E7F;
+    height: 13%;
+    width: 100%;
+  }
+</style>
+</html>
